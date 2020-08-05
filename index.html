@@ -2,127 +2,180 @@
 <html>
 
 <!-- Head -->
-
-<head>
-    <meta charset="UTF-8">
-    <title>Isaac Suehiro | Software Developer</title>
-    <link rel="stylesheet" type="text/css" href="./Stylesheet/sample_Portfolio.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>Isaac Suehiro | Software Developer </title>
+		  <link rel="stylesheet" type="text/css" href="Stylesheet/sample_Portfolio.css">
+	</head>
+		  
 
 <!-- Body -->
+<body class="Background"> 
 
-<body class="Background">
+<!-- Navbar -->
+	<div class="Navbar">
+		<a class="active" href="#Home">Home</a> 
+		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
+		<a href="#About">About</a>
+		<a href="#GitHub">GitHub</a>
+		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
+	</div>
 
-    <!-- Navbar -->
-    <div class="Navbar">
-        <a href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
-    </div>
+<!-- Home -->
+	<div id="Home">
+		<br> <!-- Breaks inserted to add space between navbar and first heading -->
+		<br>
+		
+<!-- Video -->
+		<video autoplay muted loop id="Typing_Video"> <!-- Makes the video play automatically, on a loop and with no sound -->
+			<source src="Stylesheet/Video/Typing.mp4" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+		</video>
+	</div>
 
-    <!-- Home -->
-    <br> <!-- Breaks inserted to add space between navbar and first heading -->
-    <br>
+<!-- Video text --> 
+	<div class="Video_Text"> 
+		<h1 style="color:white;">Welcome</h1>
+			<p> 
+			<strong>
+					<center>
+						<q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+						<br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage
+                        <br>or field of battle and to command such unswervingly dutiful actors or troops.
+						</q>	
+						<br>-Joseph Weizenbaum<br>
+						<br>
+						My name is Isaac. Welcome to my portfolio website. On it, I will tell you about my background and
+						experience. <br>
+						<br>Thank you for stopping by and enjoy! 
+					</center>	
+			</strong>				
+			</p> 
+	</div>
 
-    <!-- Video -->
-    <div id="Home">
-        <video autoplay muted loop id="Typing_Video">
-            <!-- Makes the video play automatically, on a loop and with no sound -->
-            <source src="Stylesheet/Video/Typing.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-            <!-- Display message if video fails to run -->
-        </video>
-    </div>
+	<!-- Slideshow section -->
+	<div id="Slideshow">
+		<div id="Slideshow_Background"> 
+		<div id="Slideshow_Container">
+			
+			<!-- to be added when photos are available
+			<div class="mySlides fade">
+			<div class="Slide_Number">1 / 6</div>
+				<img class="Slide_Show_Images" src="Stylesheet/Images/Picture_of_You.jpg" style="width:100%">
+				<div class="text">I'm available to assist you on your project!</div>
+			</div>
+			-->
+			<div class="mySlides fade">
+			<div class="Slide_Number">1 / 5</div>
+				<img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+				<div class="text">I am a studying to be a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+			</div>
 
-    <!-- Video text -->
-    <div class="Video_Text">
-        <h1 style="color:white;">Welcome </h1>
-        <p>
-            <strong>
-                <center>
-                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such
-                        absolute authority to arrange a stage or
-                        <br>field of battle and to command such unswervingly dutiful actors or troops.
-                    </q>
-                    <br>-Joseph Weizenbaum<br>
-                    <br>
-                    My name is Isaac. Welcome to my portfolio website. On it, I will tell you about my background and
-                    experience.<br>
-                    <br>Thank you for stopping by and enjoy!
-                </center>
-            </strong>
-        </p>
-    </div>
+			<div class="mySlides fade">
+			<div class="Slide_Number">2 / 5</div>
+				<img class="Slide_Show_Images" src="Stylesheet/Images/Python.png" style="width:100%">
+				<div class="text">the popular programming language Python,</div>
+			</div>
 
-    <!-- About section -->
-    <div class="Row" id="About">
-        <div class="Column_2">
-            <!-- Left column -->
-            <img src="Stylesheet/Images/Development.jpg" alt="Laptop">
-        </div>
+			<div class="mySlides fade">
+			<div class="Slide_Number">3 / 5</div>
+				<img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.png" style="width:100%">
+				<div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+			</div>
 
-        <div class="Column_1">
-            <!-- Right column -->
-            <h1>About</h2>
-                <p>I am an aspiring future developer. Like many i have always been interested in computers as they serve in such a large part of life as we know it. <br><br> This interest has pushed me to enroll as a student at <a href="https://www.learncodinganywhere.com"
-                        target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and here i plan to studry
-                    in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>In time i will become a full-stack developer and would love to work with you on your project. <a
-                        href="#Contact">Contact</a> me below!</p>
-        </div>
-    </div>
+			<div class="mySlides fade">
+			<div class="Slide_Number">4 / 5</div>
+				<img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width:100%">
+				<div class="text">back end development, databases and SQL.</div>
+				</div>
 
-    <!-- GitHub section -->
-    <div class="Row" id="GitHub">
-        <div class="Column_1">
-            <!-- Left column -->
-            <h1>GitHub</h1>
-            <center>
-            <p>You can view my coding projects on my GitHub profile here:
-               <a href="https://github.com/eyesick" target="_blank">GitHub</a>
-            </p>
-            </center>
-        </div>
+			<div class="mySlides fade">
+			<div class="Slide_Number">5 / 5</div>
+				<img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
+				<div class="text"> 
+					<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+				</div>
+			</div>
+		
+			<a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="Next" onclick="plusSlides(1)">&#10095;</a>
+			
+		</div>
+	<br>
 
-        <div class="Column_2">
-            <!-- Right column -->
-            <a href="https://github.com/eyesick" target="_blank"><img src="Stylesheet/Images/GitHub.png"
-                    alt="GitHub"></a>
-        </div>
-    </div>
+		<div style="text-align:center">
 
-    <!-- Contact section -->
-    <div class="Row" id="Contact">
-        <div class="Column_3">
-            <!-- Contact image, left column -->
-            <img src="Stylesheet/Images/Contact.jpg" alt="Contact_Image">
-        </div>
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+			<span class="dot" onclick="currentSlide(4)"></span> 
+			<span class="dot" onclick="currentSlide(5)"></span> 
+			<!-- <span class="dot" onclick="currentSlide(6)"></span> --> 
 
-        <div class="Column_4">
-            <!-- Contact form, right "column" -->
-            <h1>Contact</h2>
-                <form action="" method="get">
-                    <!-- This specifies where to send the form data and how; it is left blank -->
-                    <label>Name:</label>
-                    <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                    <input type="submit" value="Submit">
-                </form>
-        </div>
-    </div>
+		</div>
+		</div>
+	</div>
 
-    <!-- Footer section -->
-    <footer>
-        <p>
-            <center>&copy Isaac Suehiro
-            </center><br>
-        </p>
-    </footer>
 
+
+	<!-- About section -->
+	<div class="Row" id="About"> 
+		<div class="Column_2"> <!-- Left column -->
+		<img src="Stylesheet/Images/Development.jpg" alt="Laptop">
+		</div>
+
+		<div class="Column_1"> <!-- Right column -->
+		<h1>About</h2>
+			<p>I am an aspiring future developer. Like many i have always been interested in computers as they serve in such a large part of life as we know it. <br><br> This interest has pushed me to enroll as a student at <a href="https://www.learncodinganywhere.com"
+				target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and here i plan to study
+			in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>In time i will become a full-stack developer and would love to work with you on your project. <a
+				href="#Contact">Contact</a> me below!</p>
+		</div>
+	</div>
+
+	<!-- GitHub section -->
+		<div class="Row" id="GitHub">
+			<div class="Column_1"> <!-- Left column -->
+				<h1>GitHub</h1>
+				<p>You can view my coding projects on my GitHub profile here: </p> <br>
+					<center><a href="https://github.com/eyesick" target="_blank">GitHub</a></center></p>
+			</div>
+			
+			<div class="Column_2"> <!-- Right column -->
+				<a href="https://github.com/eyesick" target="_blank"><img src="Stylesheet/Images/GitHub.png" alt="GitHub"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact section -->
+	<div id="Contact"> 
+		<button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+		<div class="form-popup" id="myForm">
+			<form action="https://formspree.io/isaac.suehiro@gmail.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+			<h1>Contact</h1>
+				<label for="name"><b>Name</b></label>
+				<input type="text" placeholder="Type your name here" name="name" required>
+				<label for="phone"><b>Phone</b></label>
+				<input type="text" placeholder="Enter your phone number here" name="phone">
+				<label for="email"><b>Email</b></label>		
+				<input type="text" placeholder="Type your email address here" name="email" required>
+				<label for="message"><b>Message</b></label>
+				<input type="text" placeholder="Type your message here" name="message">
+
+		<button type="submit" class="btn">SUBMIT</button>
+		<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+			</form>
+		</div>
+	</div>
+		
+	<!-- Footer section -->	
+		<footer>
+		<p>
+			<center>&copy Isaac Suehiro &nbsp; | &nbsp; 2020</a></center><br>
+		</p>
+		</footer>
+
+		<script src="JS/sample_Portfolio.js"></script>
+		
 </body>
-
 </html>
